@@ -1,0 +1,82 @@
+<!--pages/good_product/good_product.wxml-->
+<view class='index_bg'>
+  <image class='top_img' mode='aspectFit' src='https://yuyuan.quanquankeji.cn/yuyuandenghui/good_product/top.png'></image>
+  <custom-title id="custom-title" back_img="bai" />
+  <scroll-view scroll-y bindscrolltolower="loadList">
+    <view class='product_list'>
+      <view class='product_list_left'>
+        <view>
+          <navigator url='/pages/goodProducts/goodProducts?id={{item.id}}' class='product_list_item' wx:for="{{product_list_left_top}}" wx:key="{{index}}">
+            <image class='product_list_item_img' mode='aspectFit' src='{{item.photo?item.photo:"https://yuyuan.quanquankeji.cn/yuyuandenghui/buy_ticket/photo2.png"}}' style='height:{{item.height}}rpx'></image>
+            <view class='product_list_name'>{{item.name}}</view>
+            <!-- <view>
+        <text class='tjzs'>推荐指数</text>
+        <view class='star_group'>
+          <image wx:for="{{item.star}}" wx:key="" mode='aspectFit' src='https://yuyuan.quanquankeji.cn/yuyuandenghui/good_product/star.png'/>
+        </view>
+      </view> -->
+          </navigator>
+        </view>
+        <navigator url='/pages/goodProducts/goodProducts?id={{item.id}}' class='product_list_item' wx:for="{{product_list_left}}" wx:key="{{index}}">
+          <image class='product_list_item_img' mode='aspectFit' src='{{item.photo?item.photo:"https://yuyuan.quanquankeji.cn/yuyuandenghui/buy_ticket/photo2.png"}}' style='height:{{item.height}}rpx'></image>
+          <view class='product_list_name'>{{item.name}}</view>
+          <!-- <view>
+        <text class='tjzs'>推荐指数</text>
+        <view class='star_group'>
+          <image wx:for="{{item.star}}" wx:key="" mode='aspectFit' src='https://yuyuan.quanquankeji.cn/yuyuandenghui/good_product/star.png'/>
+        </view>
+      </view> -->
+        </navigator>
+        <view>
+          <navigator url='/pages/goodProducts/goodProducts?id={{item.id}}' class='product_list_item' wx:for="{{product_list_left_bottom}}" wx:key="{{index}}">
+            <image class='product_list_item_img' mode='aspectFit' src='{{item.photo?item.photo:"https://yuyuan.quanquankeji.cn/yuyuandenghui/buy_ticket/photo2.png"}}' style='height:{{item.height}}rpx'></image>
+            <view class='product_list_name'>{{item.name}}</view>
+            <!-- <view>
+        <text class='tjzs'>推荐指数</text>
+        <view class='star_group'>
+          <image wx:for="{{item.star}}" wx:key="" mode='aspectFit' src='https://yuyuan.quanquankeji.cn/yuyuandenghui/good_product/star.png'/>
+        </view>
+      </view> -->
+          </navigator>
+        </view>
+      </view>
+      <view class='product_list_right'>
+      <view>
+          <navigator url='/pages/goodProducts/goodProducts?id={{item.id}}' class='product_list_item' wx:for="{{product_list_right_top}}" wx:key="{{index}}">
+            <image class='product_list_item_img' mode='aspectFit' src='{{item.photo?item.photo:"https://yuyuan.quanquankeji.cn/yuyuandenghui/buy_ticket/photo2.png"}}' style='height:{{item.height}}rpx'></image>
+            <view class='product_list_name'>{{item.name}}</view>
+            <!-- <view>
+        <text class='tjzs'>推荐指数</text>
+        <view class='star_group'>
+          <image wx:for="{{item.star}}" wx:key="" mode='aspectFit' src='https://yuyuan.quanquankeji.cn/yuyuandenghui/good_product/star.png'/>
+        </view>
+      </view> -->
+          </navigator>
+        </view>
+        <navigator url='/pages/goodProducts/goodProducts?id={{item.id}}' class='product_list_item' wx:for="{{product_list_right}}" wx:key="{{index}}">
+          <image class='product_list_item_img' mode='aspectFit' src='{{item.photo?item.photo:"https://yuyuan.quanquankeji.cn/yuyuandenghui/buy_ticket/photo2.png"}}' style='height:{{item.height}}rpx'></image>
+          <view class='product_list_name'>{{item.name}}</view>
+          <!-- <view>
+        <text class='tjzs'>推荐指数</text>
+        <view class='star_group'>
+          <image wx:for="{{item.star}}" wx:key="" mode='aspectFit' src='https://yuyuan.quanquankeji.cn/yuyuandenghui/good_product/star.png'/>
+        </view>
+      </view> -->
+        </navigator>
+        <view>
+          <navigator url='/pages/goodProducts/goodProducts?id={{item.id}}' class='product_list_item' wx:for="{{product_list_right_bottom}}" wx:key="{{index}}">
+            <image class='product_list_item_img' mode='aspectFit' src='{{item.photo?item.photo:"https://yuyuan.quanquankeji.cn/yuyuandenghui/buy_ticket/photo2.png"}}' style='height:{{item.height}}rpx'></image>
+            <view class='product_list_name'>{{item.name}}</view>
+            <!-- <view>
+        <text class='tjzs'>推荐指数</text>
+        <view class='star_group'>
+          <image wx:for="{{item.star}}" wx:key="" mode='aspectFit' src='https://yuyuan.quanquankeji.cn/yuyuandenghui/good_product/star.png'/>
+        </view>
+      </view> -->
+          </navigator>
+        </view>
+      </view>
+      <view class="tips" hidden='{{!complete}}'>看完了</view>
+    </view>
+  </scroll-view>
+</view>
