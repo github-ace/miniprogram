@@ -1,0 +1,10 @@
+/* components/custom-tarbar.wxss */
+:host{ position:absolute;width:100%;bottom:0;}
+.tarbar{ padding:20rpx 80rpx 5rpx; box-sizing: border-box; bottom: 0; left: 0; width: 100%; display: flex; align-items:baseline; justify-content: space-between;font-size:22rpx; color: #666; text-align: center; background: #fffce5}
+.tarbar .active{ color: #e70e19; pointer-events: none}
+.tarbar navigator{ position: relative}
+.tarbar navigator button{ position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0}
+.tarbar image{ width: 50rpx; height: 50rpx}
+.tarbar text{ display: block}
+.tarbar .center{ position: absolute; bottom: 5rpx; left: 0; right: 0;width:140rpx;margin:auto; white-space: nowrap}
+.tarbar .center image{ width: 140rpx; height: 140rpx}

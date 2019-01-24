@@ -1,0 +1,5 @@
+<!--components/custom-title/custom-title.wxml-->
+<view class='custom-title' style='height:44px; padding-top:{{statusBarHeight}}; background:{{title_bg}}; background-color:{{title_bgc}};'>
+  <navigator style='font-size:0; display:{{back_force_hide?"none":back_force_show&&backShow?"initial":"none"}}' open-type='{{back_url?"reLaunch":"navigateBack"}}' url="{{back_url?back_url:''}}" delta='1'><image class='custom-title-img' mode='aspectFit' style='margin-top:calc({{statusBarHeight}} + (44px - 35rpx)/2)' src='{{back_img=="hei"?"https://yuyuan.quanquankeji.cn/yuyuandenghui/title/back.png":"https://yuyuan.quanquankeji.cn/yuyuandenghui/title/back_white.png"}}'></image></navigator>
+  <text style='color:{{text_color}}; line-height:44px'><slot></slot></text>
+</view>

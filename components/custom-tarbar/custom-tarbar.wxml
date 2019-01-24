@@ -1,0 +1,20 @@
+<!--components/custom-tarbar/custom-tarbar.wxml-->
+<form report-submit='{{true}}' bindsubmit='getFormId'>
+  <view class='tarbar'>
+    <navigator open-type="redirect" url='../index/index' class='{{tarbar.index.active?"active":""}}'>
+      <image mode='aspectFit' src='{{tarbar.index.active?tarbar.index.active_src:tarbar.index.defalut_src}}'></image>
+      <text>首页</text>
+      <button form-type='submit'></button>
+    </navigator>
+    <navigator open-type="redirect" url='../zhuzhupuman/zhuzhupuman' class='center {{tarbar.center.active?"active":""}}'>
+      <image mode='aspectFit' class='center-class' src='{{tarbar.center.active?tarbar.center.active_src:tarbar.center.defalut_src}}'></image>
+      <text>猪猪扑满</text>
+      <button form-type='submit'></button>
+    </navigator>
+    <navigator open-type="redirect" url='../mine/mine' class='{{tarbar.mine.active?"active":""}}'>
+      <image mode='aspectFit' data-val="{{tarbar.mine.active}}" src='{{tarbar.mine.active?tarbar.mine.active_src:tarbar.mine.defalut_src}}'></image>
+      <text>我的</text>
+      <button form-type='submit'></button>
+    </navigator>
+  </view>
+</form>

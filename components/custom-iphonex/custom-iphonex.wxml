@@ -1,0 +1,4 @@
+<!--components/custom-iphonex.wxml-->
+<view class="{{isIphoneX ?'fix-iphonex-button':'normal-button'}}">
+<slot></slot>
+</view>

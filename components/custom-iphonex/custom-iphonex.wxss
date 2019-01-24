@@ -1,0 +1,24 @@
+/* components/custom-iphonex.wxss */
+/* iphone适配 */
+.fix-iphonex-button {
+    /* bottom:68rpx!important; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: calc(100vh - 68rpx);
+}
+.normal-button{
+  position: fixed;
+    top: 0;
+    width: 100%;
+    height: calc(100vh);
+}
+
+.fix-iphonex-button::after {
+    content: ' ';
+    position: absolute;
+    bottom: -68rpx!important;
+    height: 70rpx!important;
+    width: 100%;
+    background: #fffce5;
+}
